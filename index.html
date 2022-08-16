@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastros Devs'cool</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&amp;family=Poppins&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://www.e-core.com/wp-content/themes/laraish/public/img/favicon/favicon-32x32.png?1659460445"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Formulário</h1>
+      </header>
+
+      <form class="inputBtn">
+        <div class="inputs">
+          <div class="inputName">
+            <label for="nameBtn">Nome</label>
+            <input
+              type="text"
+              name=""
+              id="nameBtn"
+              placeholder="Digite o nome"
+            />
+          </div>
+
+          <div class="inputAge">
+            <label for="ageBtn">Idade</label>
+            <input
+              type="number"
+              name=""
+              id="ageBtn"
+              placeholder="Digite a idade"
+            />
+          </div>
+        </div>
+
+        <button type="submit">Salvar</button>
+      </form>
+
+      <div class="filters">
+        <div class="dataOrder">
+          <div class="setOrder">
+            <label for="order">Ordem</label>
+            <select id="order">
+              <option value="none">Nenhuma</option>
+              <option value="ageUp">Idade (crescente)</option>
+              <option value="ageDown">Idade (decrescente)</option>
+              <option value="nameUp">Nome (alfabética crescente)</option>
+              <option value="nameDown">Nome (alfabética decrescente)</option>
+              <option value="ageNameUp">Idade e nome (crescente)</option>
+              <option value="ageNameDown">Idade e nome (decrescente)</option>
+            </select>
+          </div>
+          <button>Ordenar</button>
+        </div>
+
+        <div class="dataCategory">
+          <div class="setCategory">
+            <label for="ageCategory"> Categoria</label>
+            <select id="ageCategory">
+              <option value="none">Nenhuma</option>
+              <option value="child">Criança</option>
+              <option value="teenager">Adolescente</option>
+              <option value="adult">Adulto</option>
+              <option value="elderly">Idoso</option>
+            </select>
+          </div>
+          <button>Selecionar</button>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Categoria</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="clearAll">
+        <button>Remover todos dados</button>
+      </div>
+    </div>
+  </body>
+</html>
