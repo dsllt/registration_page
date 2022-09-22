@@ -1,7 +1,3 @@
-![Capa](https://user-images.githubusercontent.com/62303172/174459727-e5a0f5e3-c37a-402f-b97f-74bc424ab0d9.png)
-
-<br>
-
 # Registration Page
 Página desenvolvida para a criação de um formulário que armazena informações pessoais (nome e idade) sem o uso d euma database.
 <br>
